@@ -3,7 +3,7 @@ const helmet = require('helmet'); // Security
 const morgan = require('morgan'); // Logging
 const path = require('path');
 const app = express();
-const port = 3001;
+const port = process.env.PORT || 3001;
 
 // 1. Master Security & Logging
 app.use(helmet());
